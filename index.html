@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+-<!DOCTYPE html>
 <html>
 <head>
 <title>English Quest Animals v0.15</title>
@@ -97,10 +97,26 @@ margin-top:10px;
 
 <div class="cards">
 
-<div class="card" onclick="speak('Wolf')">
+<div class="card">
+
 <div class="animal">🐺</div>
+
 <div class="word">WOLF</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Wolf')">
+🔊
+</div>
+
+<button onclick="showWolfFact()">
+💡 Fact
+</button>
+
+<button onclick="showWolfSpeak()">
+🎤 Speak
+</button>
+
+<div id="wolfInfo"></div>
+
 </div>
 
 <div class="card" onclick="speak('Fox')">
@@ -109,10 +125,26 @@ margin-top:10px;
 <div class="sound">🔊</div>
 </div>
 
-<div class="card" onclick="speak('Camel')">
+<div class="card">
+
 <div class="animal">🐪</div>
+
 <div class="word">CAMEL</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Camel')">
+🔊
+</div>
+
+<button onclick="showCamelFact()">
+💡 Fact
+</button>
+
+<button onclick="showCamelSpeak()">
+🎤 Speak
+</button>
+
+<div id="camelInfo"></div>
+
 </div>
 
 <div class="card" onclick="speak('Horse')">
@@ -127,10 +159,26 @@ margin-top:10px;
 <div class="sound">🔊</div>
 </div>
 
-<div class="card" onclick="speak('Golden Eagle')">
+<div class="card">
+
 <div class="animal">🦅</div>
+
 <div class="word">GOLDEN EAGLE</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Golden Eagle')">
+🔊
+</div>
+
+<button onclick="showFact()">
+💡 Fact
+</button>
+
+<button onclick="showSpeak()">
+🎤 Speak
+</button>
+
+<div id="eagleInfo"></div>
+
 </div>
 
 </div>
@@ -183,6 +231,46 @@ let speech = new SpeechSynthesisUtterance(word);
 speech.lang = "en-US";
 speech.rate = 0.8;
 speechSynthesis.speak(speech);
+}
+function showFact(){
+
+document.getElementById("eagleInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>The Golden Eagle is a symbol of Kazakhstan.</p>";
+
+}
+
+function showSpeak(){
+
+document.getElementById("eagleInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Have you seen an eagle?</p>";
+
+}
+function showCamelFact(){
+
+document.getElementById("camelInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Camels can live in the desert.</p>";
+
+}
+
+function showCamelSpeak(){
+
+document.getElementById("camelInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Would you like to ride a camel?</p>";
+
+}
+
+function showWolfFact(){
+
+document.getElementById("wolfInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Wolves live in groups called packs.</p>";
+
+}
+
+function showWolfSpeak(){
+
+document.getElementById("wolfInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you like wolves?</p>";
+
 }
 const quizQuestions = [
 
