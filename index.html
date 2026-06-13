@@ -119,10 +119,26 @@ margin-top:10px;
 
 </div>
 
-<div class="card" onclick="speak('Fox')">
+<div class="card">
+
 <div class="animal">🦊</div>
+
 <div class="word">FOX</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Fox')">
+🔊
+</div>
+
+<button onclick="showFoxFact()">
+💡 Fact
+</button>
+
+<button onclick="showFoxSpeak()">
+🎤 Speak
+</button>
+
+<div id="foxInfo"></div>
+
 </div>
 
 <div class="card">
@@ -147,16 +163,48 @@ margin-top:10px;
 
 </div>
 
-<div class="card" onclick="speak('Horse')">
+<div class="card">
+
 <div class="animal">🐴</div>
+
 <div class="word">HORSE</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Horse')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Sheep')">
+<button onclick="showHorseFact()">
+💡 Fact
+</button>
+
+<button onclick="showHorseSpeak()">
+🎤 Speak
+</button>
+
+<div id="horseInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐑</div>
+
 <div class="word">SHEEP</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Sheep')">
+🔊
+</div>
+
+<button onclick="showSheepFact()">
+💡 Fact
+</button>
+
+<button onclick="showSheepSpeak()">
+🎤 Speak
+</button>
+
+<div id="sheepInfo"></div>
+
 </div>
 
 <div class="card">
@@ -270,6 +318,45 @@ function showWolfSpeak(){
 
 document.getElementById("wolfInfo").innerHTML =
 "<p><b>Speaking Challenge:</b><br>Do you like wolves?</p>";
+
+}
+function showFoxFact(){
+
+document.getElementById("foxInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Foxes are very clever animals.</p>";
+
+}
+
+function showFoxSpeak(){
+
+document.getElementById("foxInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Is the fox clever?</p>";
+
+}
+function showHorseFact(){
+
+document.getElementById("horseInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Horses are important in Kazakh culture.</p>";
+
+}
+
+function showHorseSpeak(){
+
+document.getElementById("horseInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Can you ride a horse?</p>";
+
+}
+function showSheepFact(){
+
+document.getElementById("sheepInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Sheep give us wool.</p>";
+
+}
+
+function showSheepSpeak(){
+
+document.getElementById("sheepInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Have you seen a sheep?</p>";
 
 }
 const quizQuestions = [
