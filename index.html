@@ -67,28 +67,92 @@ margin-top:10px;
 
 <div class="cards">
 
-<div class="card" onclick="speak('Dog')">
+<div class="card">
+
 <div class="animal">🐶</div>
+
 <div class="word">DOG</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Dog')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Cat')">
+<button onclick="showDogFact()">
+💡 Fact
+</button>
+
+<button onclick="showDogSpeak()">
+🎤 Speak
+</button>
+
+<div id="dogInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐱</div>
+
 <div class="word">CAT</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Cat')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Rabbit')">
+<button onclick="showCatFact()">
+💡 Fact
+</button>
+
+<button onclick="showCatSpeak()">
+🎤 Speak
+</button>
+
+<div id="catInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐰</div>
+
 <div class="word">RABBIT</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Rabbit')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Hamster')">
+<button onclick="showRabbitFact()">
+💡 Fact
+</button>
+
+<button onclick="showRabbitSpeak()">
+🎤 Speak
+</button>
+
+<div id="rabbitInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐹</div>
+
 <div class="word">HAMSTER</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Hamster')">
+🔊
+</div>
+
+<button onclick="showHamsterFact()">
+💡 Fact
+</button>
+
+<button onclick="showHamsterSpeak()">
+🎤 Speak
+</button>
+
+<div id="hamsterInfo"></div>
+
 </div>
 
 </div>
@@ -235,40 +299,134 @@ margin-top:10px;
 
 <div class="cards">
 
-<div class="card" onclick="speak('Lion')">
+<div class="card">
+
 <div class="animal">🦁</div>
+
 <div class="word">LION</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Lion')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Elephant')">
+<button onclick="showLionFact()">
+💡 Fact
+</button>
+
+<button onclick="showLionSpeak()">
+🎤 Speak
+</button>
+
+<div id="lionInfo"></div>
+
+</div>
+<div class="card">
+
 <div class="animal">🐘</div>
+
 <div class="word">ELEPHANT</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Elephant')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Giraffe')">
+<button onclick="showElephantFact()">
+💡 Fact
+</button>
+
+<button onclick="showElephantSpeak()">
+🎤 Speak
+</button>
+
+<div id="elephantInfo"></div>
+
+</div>
+<div class="card">
+
 <div class="animal">🦒</div>
+
 <div class="word">GIRAFFE</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Giraffe')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Zebra')">
+<button onclick="showGiraffeFact()">
+💡 Fact
+</button>
+
+<button onclick="showGiraffeSpeak()">
+🎤 Speak
+</button>
+
+<div id="giraffeInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🦓</div>
+
 <div class="word">ZEBRA</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Zebra')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Monkey')">
+<button onclick="showZebraFact()">
+💡 Fact
+</button>
+
+<button onclick="showZebraSpeak()">
+🎤 Speak
+</button>
+
+<div id="zebraInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐒</div>
+
 <div class="word">MONKEY</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Monkey')">
+🔊
 </div>
 
-<div class="card" onclick="speak('Panda')">
+<button onclick="showMonkeyFact()">
+💡 Fact
+</button>
+
+<button onclick="showMonkeySpeak()">
+🎤 Speak
+</button>
+
+<div id="monkeyInfo"></div>
+
+</div>
+
+<div class="card">
+
 <div class="animal">🐼</div>
+
 <div class="word">PANDA</div>
-<div class="sound">🔊</div>
+
+<div class="sound" onclick="speak('Panda')">
+🔊
+</div>
+
+<button onclick="showPandaFact()">
+💡 Fact
+</button>
+
+<button onclick="showPandaSpeak()">
+🎤 Speak
+</button>
+
+<div id="pandaInfo"></div>
+
 </div>
 
 </div>
@@ -359,6 +517,142 @@ document.getElementById("sheepInfo").innerHTML =
 "<p><b>Speaking Challenge:</b><br>Have you seen a sheep?</p>";
 
 }
+
+function showLionFact(){
+
+document.getElementById("lionInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Lions are called the kings of animals.</p>";
+
+}
+
+function showLionSpeak(){
+
+document.getElementById("lionInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you like lions?</p>";
+
+}
+function showElephantFact(){
+
+document.getElementById("elephantInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Elephants are the largest land animals.</p>";
+
+}
+
+function showElephantSpeak(){
+
+document.getElementById("elephantInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Have you seen an elephant?</p>";
+
+}function showGiraffeFact(){
+
+document.getElementById("giraffeInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Giraffes have very long necks.</p>";
+
+}
+
+function showGiraffeSpeak(){
+
+document.getElementById("giraffeInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Is the giraffe tall or short?</p>";
+
+}function showZebraFact(){
+
+document.getElementById("zebraInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Every zebra has different stripes.</p>";
+
+}
+
+function showZebraSpeak(){
+
+document.getElementById("zebraInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you like zebras?</p>";
+
+}
+
+function showMonkeyFact(){
+
+document.getElementById("monkeyInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Monkeys like climbing trees.</p>";
+
+}
+
+function showMonkeySpeak(){
+
+document.getElementById("monkeyInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you like monkeys?</p>";
+
+}
+
+function showPandaFact(){
+
+document.getElementById("pandaInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Pandas love eating bamboo.</p>";
+
+}
+
+function showPandaSpeak(){
+
+document.getElementById("pandaInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Would you like a panda as a pet?</p>";
+
+}
+
+function showDogFact(){
+
+document.getElementById("dogInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Dogs are people's best friends.</p>";
+
+}
+
+function showDogSpeak(){
+
+document.getElementById("dogInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you have a dog?</p>";
+
+}
+
+function showCatFact(){
+
+document.getElementById("catInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Cats sleep many hours every day.</p>";
+
+}
+
+function showCatSpeak(){
+
+document.getElementById("catInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Do you like cats?</p>";
+
+}
+
+function showRabbitFact(){
+
+document.getElementById("rabbitInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Rabbits have long ears.</p>";
+
+}
+
+function showRabbitSpeak(){
+
+document.getElementById("rabbitInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Would you like a rabbit as a pet?</p>";
+
+}
+
+function showHamsterFact(){
+
+document.getElementById("hamsterInfo").innerHTML =
+"<p><b>Interesting Fact:</b><br>Hamsters are small and cute pets.</p>";
+
+}
+
+function showHamsterSpeak(){
+
+document.getElementById("hamsterInfo").innerHTML =
+"<p><b>Speaking Challenge:</b><br>Have you seen a hamster?</p>";
+
+}
+
 const quizQuestions = [
 
 {
